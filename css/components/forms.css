@@ -1,0 +1,93 @@
+/* フォームスタイル */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-background);
+  transition: all var(--transition-fast);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+::placeholder {
+  color: var(--color-text-lighter);
+  opacity: 1;
+}
+
+.contact-form-container {
+  background-color: var(--color-background);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Google Form Iframe */
+#form-container {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+#google-form-iframe {
+  width: 100%;
+  height: 650px;
+  border: none;
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-background);
+  transition: all 0.3s ease;
+}
+
+/* フォームのトランジション */
+.contact-form {
+  transition: all 0.5s ease;
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--border-radius-md);
+  background-color: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid #2ecc71;
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.success-message i {
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+  color: #2ecc71;
+}
+
+.error-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+  display: flex;
+  align-items: center;
+}
+
+.error-message i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
